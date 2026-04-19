@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Ferreira & Novaes Advogados Associados — Excelência jurídica com resultados comprovados. Direito Civil, Trabalhista, Empresarial e Previdenciário." />
+  <meta name="keywords" content="advogado, escritório de advocacia, direito civil, direito trabalhista, João Pessoa" />
+  <title>Ferreira & Novaes Advogados Associados</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- ═══ MOBILE MENU ══════════════════════════════════════════════ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="menuClose">✕</button>
+    <a onclick="navTo('sobre')">Sobre</a>
+    <a onclick="navTo('areas')">Áreas de Atuação</a>
+    <a onclick="navTo('equipe')">Equipe</a>
+    <a onclick="navTo('depoimentos')">Depoimentos</a>
+    <a onclick="navTo('contato')">Contato</a>
+    <button class="btn-primary" onclick="navTo('contato')" style="margin-top:1rem">Agendar Consulta</button>
+  </div>
+
+  <!-- ═══ NAVBAR ═══════════════════════════════════════════════════ -->
+  <nav class="nav" id="navbar">
+    <a class="nav-logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      Ferreira <span>&amp;</span> Novaes
+    </a>
+    <ul class="nav-links">
+      <li><a onclick="navTo('sobre')">Sobre</a></li>
+      <li><a onclick="navTo('areas')">Áreas de Atuação</a></li>
+      <li><a onclick="navTo('equipe')">Equipe</a></li>
+      <li><a onclick="navTo('depoimentos')">Depoimentos</a></li>
+      <li><a onclick="navTo('contato')">Contato</a></li>
+    </ul>
+    <button class="btn-cta" onclick="navTo('contato')">Agendar Consulta</button>
+    <button class="hamburger" id="menuOpen" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══ HERO ══════════════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-ornament"></div>
+    <div class="hero-content">
+      <div class="eyebrow fade-up">Advocacia de Excelência</div>
+      <h1 class="fade-up delay-1">
+        Excelência jurídica<br>com <em>resultados</em><br>comprovados.
+      </h1>
+      <p class="hero-sub fade-up delay-2">
+        Há mais de duas décadas defendendo os interesses de nossos clientes com rigor técnico, ética inabalável e
+        estratégia jurídica de alto nível.
+      </p>
+      <div class="hero-btns fade-up delay-3">
+        <button class="btn-primary" onclick="navTo('contato')">Fale com um Especialista</button>
+        <button class="btn-outline" onclick="navTo('areas')">Conheça Nossos Serviços</button>
+      </div>
+      <div class="hero-stats fade-up delay-4">
+        <div>
+          <span class="stat-num">+2.400</span>
+          <span class="stat-lbl">Casos resolvidos</span>
+        </div>
+        <div>
+          <span class="stat-num">94%</span>
+          <span class="stat-lbl">Taxa de êxito</span>
+        </div>
+        <div>
+          <span class="stat-num">22 anos</span>
+          <span class="stat-lbl">De experiência</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SOBRE ══════════════════════════════════════════════════════ -->
+  <section id="sobre">
+    <div class="sobre-grid">
+      <div class="sobre-text fade-up">
+        <div class="section-label">Sobre o Escritório</div>
+        <h2 class="section-title">Tradição e modernidade a serviço do <em>direito</em></h2>
+        <p>Fundado em 2002, Ferreira &amp; Novaes Advogados Associados é um escritório full-service reconhecido pela
+          solidez técnica e pelo compromisso absoluto com os direitos de cada cliente.</p>
+        <p>Nossa equipe multidisciplinar reúne os melhores profissionais do mercado jurídico, atuando com precisão e
+          transparência em cada fase do processo — desde a consulta inicial até a execução da decisão.</p>
+        <div class="mvv">
+          <div class="mvv-card">
+            <h4>Missão</h4>
+            <p>Promover justiça com eficiência, ética e respeito à dignidade humana.</p>
+          </div>
+          <div class="mvv-card">
+            <h4>Visão</h4>
+            <p>Ser referência nacional em excelência jurídica e inovação no atendimento.</p>
+          </div>
+          <div class="mvv-card">
+            <h4>Valores</h4>
+            <p>Integridade, transparência, confidencialidade e resultado.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sobre-visual fade-up delay-2">
+        <div class="sobre-frame">⚖</div>
+        <div class="sobre-acc1"></div>
+        <div class="sobre-acc2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ÁREAS ══════════════════════════════════════════════════════ -->
+  <section id="areas">
+    <div style="max-width:1200px;margin:0 auto">
+      <div class="areas-header fade-up">
+        <div class="section-label">Áreas de Atuação</div>
+        <h2 class="section-title">Especialistas onde <em>você</em> mais precisa</h2>
+      </div>
+      <div class="areas-grid">
+        <div class="area-card fade-up delay-1">
+          <span class="area-icon">⚖️</span>
+          <h3>Direito Civil</h3>
+          <p>Contratos, responsabilidade civil, direito de família e sucessões com abordagem estratégica e resultados
+            concretos.</p>
+        </div>
+        <div class="area-card fade-up delay-2">
+          <span class="area-icon">👷</span>
+          <h3>Direito Trabalhista</h3>
+          <p>Defesa de empregados e empregadores em processos trabalhistas, negociações e consultoria preventiva.</p>
+        </div>
+        <div class="area-card fade-up delay-3">
+          <span class="area-icon">🏛️</span>
+          <h3>Direito Empresarial</h3>
+          <p>Assessoria jurídica completa para empresas: contratos, fusões, societário e governança corporativa.</p>
+        </div>
+        <div class="area-card fade-up delay-4">
+          <span class="area-icon">🛡️</span>
+          <h3>Direito Previdenciário</h3>
+          <p>Aposentadorias, benefícios do INSS, planejamento previdenciário e revisão de benefícios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DIFERENCIAIS ═══════════════════════════════════════════════ -->
+  <section id="diferenciais">
+    <div class="dif-inner">
+      <div class="dif-header">
+        <div class="fade-up">
+          <div class="section-label">Nossos Diferenciais</div>
+          <h2 class="section-title">Por que escolher a <em>Ferreira &amp; Novaes</em>?</h2>
+        </div>
+        <p class="dif-quote fade-up delay-2">"A justiça não é apenas uma conquista — é um compromisso que renovamos a
+          cada caso."</p>
+      </div>
+      <div class="dif-grid">
+        <div class="dif-card fade-up delay-1">
+          <div class="dif-icon">✦</div>
+          <h3>Atendimento Personalizado</h3>
+          <p>Cada cliente recebe atenção exclusiva e estratégia jurídica sob medida para seu caso.</p>
+        </div>
+        <div class="dif-card fade-up delay-2">
+          <div class="dif-icon">✦</div>
+          <h3>Equipe Experiente</h3>
+          <p>Mais de 20 anos de atuação com advogados altamente especializados em cada área.</p>
+        </div>
+        <div class="dif-card fade-up delay-3">
+          <div class="dif-icon">✦</div>
+          <h3>Alta Taxa de Sucesso</h3>
+          <p>Mais de 94% de êxito em casos contenciosos e consultivos nos últimos 5 anos.</p>
+        </div>
+        <div class="dif-card fade-up delay-4">
+          <div class="dif-icon">✦</div>
+          <h3>Sigilo Absoluto</h3>
+          <p>Confidencialidade total garantida em todas as etapas do seu atendimento jurídico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EQUIPE ══════════════════════════════════════════════════════ -->
+  <section id="equipe">
+    <div class="equipe-header fade-up">
+      <div class="section-label center">Nossa Equipe</div>
+      <h2 class="section-title center">Advogados <em>apaixonados</em> pelo que fazem</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card fade-up delay-1">
+        <div class="team-avatar">AF</div>
+        <h3>Dr. Augusto Ferreira</h3>
+        <p>Sócio Fundador — Direito Civil &amp; Empresarial</p>
+      </div>
+      <div class="team-card fade-up delay-2">
+        <div class="team-avatar">CN</div>
+        <h3>Dra. Camila Novaes</h3>
+        <p>Sócia — Direito Trabalhista</p>
+      </div>
+      <div class="team-card fade-up delay-3">
+        <div class="team-avatar">RM</div>
+        <h3>Dr. Rafael Monteiro</h3>
+        <p>Associado — Direito Previdenciário</p>
+      </div>
+      <div class="team-card fade-up delay-4">
+        <div class="team-avatar">ID</div>
+        <h3>Dra. Isabela Drummond</h3>
+        <p>Associada — Direito de Família</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DEPOIMENTOS ════════════════════════════════════════════════ -->
+  <section id="depoimentos">
+    <div class="dep-header fade-up">
+      <div class="section-label center">Depoimentos</div>
+      <h2 class="section-title center">O que dizem nossos <em>clientes</em></h2>
+    </div>
+    <div class="dep-slider fade-up delay-1">
+      <div class="dep-card" id="depCard">
+        <div class="dep-stars" id="depStars">★★★★★</div>
+        <p class="dep-quote" id="depText">"O escritório Ferreira &amp; Novaes resolveu uma disputa societária complexa
+          com competência e agilidade impressionantes. Recomendo sem reservas."</p>
+        <div class="dep-author">
+          <strong id="depName">Marcos Oliveira</strong>
+          <span id="depRole">Empresário</span>
+        </div>
+      </div>
+      <div class="dep-nav" id="depNav">
+        <div class="dep-dot active" onclick="goSlide(0)"></div>
+        <div class="dep-dot" onclick="goSlide(1)"></div>
+        <div class="dep-dot" onclick="goSlide(2)"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA BANNER ════════════════════════════════════════════════ -->
+  <div id="cta" class="fade-up">
+    <div class="section-label center" style="justify-content:center">Pronto para começar?</div>
+    <h2 class="section-title">Seu direito, nossa <em>prioridade</em></h2>
+    <p>Agende uma consulta confidencial e descubra como podemos defender seus interesses com toda a excelência que você
+      merece.</p>
+    <button class="btn-primary" onclick="navTo('contato')" style="font-size:.9rem;padding:1rem 2.8rem">
+      Agende sua Consulta Agora
+    </button>
+  </div>
+
+  <!-- ═══ CONTATO ════════════════════════════════════════════════════ -->
+  <section id="contato">
+    <div class="cont-inner">
+      <!-- FORM -->
+      <div class="fade-up">
+        <div class="section-label">Contato</div>
+        <h2 class="section-title">Fale <em>conosco</em></h2>
+
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(83) 9 0000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva brevemente sua situação..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;padding:1rem">
+            Enviar Mensagem
+          </button>
+        </form>
+
+        <div class="success-box" id="successBox" style="display:none">
+          <h3>✦ Mensagem recebida!</h3>
+          <p>Em breve um de nossos especialistas entrará em contato.</p>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="cont-info fade-up delay-2">
+        <h3>Informações de Contato</h3>
+        <div class="cont-item">
+          <span class="cont-icon">📍</span>
+          <div>
+            <strong>Endereço</strong>
+            <span>Av. Epitácio Pessoa, 1600 — sala 501<br>João Pessoa — PB, 58030-000</span>
+          </div>
+        </div>
+        <div class="cont-item">
+          <span class="cont-icon">📞</span>
+          <div>
+            <strong>Telefone</strong>
+            <span>(83) 3222-0001</span>
+          </div>
+        </div>
+        <div class="cont-item">
+          <span class="cont-icon">📧</span>
+          <div>
+            <strong>E-mail</strong>
+            <span>contato@ferreiraenovaes.adv.br</span>
+          </div>
+        </div>
+        <div class="cont-item">
+          <span class="cont-icon">🕐</span>
+          <div>
+            <strong>Horário</strong>
+            <span>Seg–Sex: 8h às 18h<br>Sáb: 9h às 12h (com hora marcada)</span>
+          </div>
+        </div>
+        <div class="map-mock"><span>📍 João Pessoa, Paraíba</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-col footer-brand">
+        <div class="nav-logo">Ferreira <span>&amp;</span> Novaes</div>
+        <p>Escritório de advocacia especializado em soluções jurídicas de alto nível, com compromisso ético e resultados
+          concretos.</p>
+        <div class="social-links">
+          <a class="social-btn" title="LinkedIn">in</a>
+          <a class="social-btn" title="Instagram">ig</a>
+          <a class="social-btn" title="Facebook">fb</a>
+          <a class="social-btn" title="YouTube">yt</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a onclick="window.scrollTo({top:0,behavior:'smooth'})">Home</a></li>
+          <li><a onclick="navTo('sobre')">Sobre</a></li>
+          <li><a onclick="navTo('areas')">Áreas de Atuação</a></li>
+          <li><a onclick="navTo('equipe')">Equipe</a></li>
+          <li><a onclick="navTo('depoimentos')">Depoimentos</a></li>
+          <li><a onclick="navTo('contato')">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Áreas</h4>
+        <ul>
+          <li><a>Direito Civil</a></li>
+          <li><a>Direito Trabalhista</a></li>
+          <li><a>Direito Empresarial</a></li>
+          <li><a>Direito Previdenciário</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a>Política de Privacidade</a></li>
+          <li><a>Termos de Uso</a></li>
+          <li><a>Código de Ética OAB</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Ferreira &amp; Novaes Advogados Associados. Todos os direitos reservados.</span>
+      <span class="oab">OAB/PB Nº 12.345</span>
+    </div>
+  </footer>
+
+  <!-- ═══ WHATSAPP ═══════════════════════════════════════════════════ -->
+  <a class="wa-btn" href="https://wa.me/5583900000000" target="_blank" rel="noreferrer" title="WhatsApp">
+    <!-- <img src="/assets/icons/icons8-whatsapp.gif" alt="WhatsApp"> -->
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="-7 -5 60 60">
+      <path fill="#fff"
+        d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6	C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z">
+      </path>
+      <path fill="#fff"
+        d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z">
+      </path>
+      <path fill="#cfd8dc"
+        d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3	L4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z">
+      </path>
+      <path fill="#40c351"
+        d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8	l6-1.6l0.6,0.3c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z">
+      </path>
+      <path fill="#fff" fill-rule="evenodd"
+        d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0	s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3	c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9	c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8	c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8C20.6,19.3,19.7,17,19.3,16z"
+        clip-rule="evenodd"></path>
+    </svg>
+  </a>
+  
+<script src="script.js"></script>
+ 
+</body>
+
+</html>
