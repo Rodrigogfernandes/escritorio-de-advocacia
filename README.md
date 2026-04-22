@@ -1,104 +1,127 @@
-# Ferreira & Novaes Landing Page
+# Ribeiro & Costa Landing Page
 
-Landing page institucional estática para o escritório fictício `Ferreira & Novaes Advogados Associados`.
+Landing page institucional estatica para o escritorio ficticio `Ribeiro & Costa Advogados Associados`.
 
-O projeto foi feito com arquivos simples, sem framework:
+O projeto foi construido com HTML, CSS e JavaScript puro, sem framework ou etapa de build.
 
-- `index.html`: estrutura da página e conteúdo
-- `style.css`: estilos, layout e responsividade
-- `script.js`: menu mobile, animações, slider de depoimentos e formulário
-- `foto.png`: imagem disponível no projeto
+## Estrutura
+
+```text
+.
+|-- index.html
+|-- README.md
+`-- assets
+    |-- css
+    |   `-- style.css
+    |-- images
+    |   |-- foto.png
+    |   `-- logo.png
+    `-- js
+        `-- script.js
+```
+
+## Arquivos principais
+
+- `index.html`: estrutura da pagina, secoes, textos e conteudo institucional
+- `assets/css/style.css`: layout, paleta, responsividade, animacoes e menu mobile
+- `assets/js/script.js`: navegacao suave, menu mobile, navbar sticky, reveal on scroll, slider e formulario
+- `assets/images/`: imagens usadas na hero e na secao sobre
 
 ## Como abrir
 
-Como é uma página estática, basta abrir o arquivo `index.html` no navegador.
+Como a pagina e estatica, basta abrir o `index.html` no navegador.
 
-Opções:
+Opcoes comuns:
 
-1. dar duplo clique em `index.html`
-2. abrir pelo VS Code com Live Server
-3. servir localmente com qualquer servidor estático
+1. Dar duplo clique em `index.html`
+2. Abrir com Live Server no VS Code
+3. Servir localmente com um servidor estatico simples
 
-Exemplo com PowerShell:
+Exemplo no PowerShell:
 
 ```powershell
 start .\index.html
 ```
 
-## Estrutura da página
+## Secoes da pagina
 
-O `index.html` está organizado em seções:
+O `index.html` esta organizado nas seguintes partes:
 
 - menu mobile
 - navbar
 - hero
 - sobre
-- áreas de atuação
+- areas de atuacao
 - diferenciais
 - equipe
 - depoimentos
 - CTA
 - contato
 - footer
+- botao flutuante do WhatsApp
+
+## O que ja existe
+
+- navegacao suave entre secoes
+- menu mobile com abertura e fechamento via JavaScript
+- navbar com estado visual ao rolar a pagina
+- animacoes de entrada com `IntersectionObserver`
+- slider automatico de depoimentos
+- formulario com feedback visual de envio
+- layout responsivo para desktop e mobile
 
 ## Onde editar
 
-### Texto e conteúdo
+### Conteudo
 
-Edite diretamente no arquivo `index.html`.
+Edite diretamente o `index.html` para alterar:
 
-Exemplos:
-
-- nome do escritório
-- títulos
-- textos das seções
-- informações de contato
-- links e botões
+- nome do escritorio
+- titulos e subtitulos
+- textos das secoes
+- informacoes de contato
+- links de CTA e WhatsApp
 
 ### Visual
 
-Edite no `style.css`.
+Edite `assets/css/style.css` para ajustar:
 
-Lá estão definidos:
-
-- cores principais
+- cores e variaveis
 - tipografia
-- espaçamentos
-- grid e responsividade
-- hover dos cards e botões
-- animações de entrada
+- espacamentos
+- grids e breakpoints
+- botoes, cards e efeitos de hover
+- comportamento do menu mobile
 
-### Interações
+### Interacoes
 
-Edite no `script.js`.
+Edite `assets/js/script.js` para modificar:
 
-Hoje o arquivo controla:
+- scroll suave
+- logica do menu mobile
+- comportamento da navbar
+- animacoes de entrada
+- depoimentos
+- envio do formulario
 
-- navegação suave entre seções
-- abertura e fechamento do menu mobile
-- efeito da navbar ao rolar
-- animação com `IntersectionObserver`
-- slider de depoimentos
-- envio fake do formulário com mensagem de sucesso
+## Observacao importante
 
-## Observação importante
+O projeto ainda possui textos com problema de encoding em alguns trechos, entao certos caracteres especiais podem aparecer quebrados no HTML atual.
 
-Os arquivos atuais apresentam problema de encoding em vários textos, por isso alguns caracteres aparecem quebrados, como:
+Se quiser corrigir isso depois, o ideal e:
 
-- `ExcelÃªncia`
-- `JoÃ£o Pessoa`
-- `Ãreas`
+1. Garantir que os arquivos estejam salvos em `UTF-8`
+2. Revisar os textos que aparecem com acentuacao corrompida
+3. Padronizar os simbolos especiais usados no conteudo
 
-Se quiser corrigir isso depois, o ideal é salvar os arquivos em `UTF-8` e revisar os textos corrompidos.
-
-## Próximos passos sugeridos
+## Proximos passos sugeridos
 
 - corrigir o encoding dos arquivos
-- trocar os textos fictícios pelos reais do escritório
-- conectar o formulário a WhatsApp, e-mail ou backend
-- revisar SEO básico
-- otimizar imagens e performance
+- substituir o conteudo ficticio pelos dados reais do escritorio
+- conectar o formulario a WhatsApp, email ou backend
+- revisar acessibilidade basica do menu e dos botoes
+- otimizar imagens e metadados para SEO e performance
 
 ## Uso
 
-Projeto local para edição rápida de landing page institucional.
+Projeto local para edicao rapida de uma landing page institucional de escritorio de advocacia.
