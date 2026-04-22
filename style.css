@@ -1,4 +1,4 @@
-/* ─── RESET & VARIABLES ─────────────────────────────────────── */
+  /* ─── RESET & VARIABLES ─────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -21,6 +21,10 @@
       font-weight: 300;
       line-height: 1.7;
       overflow-x: hidden;
+    }
+    body.menu-open {
+      overflow: hidden;
+      touch-action: none;
     }
 
     /* ─── NAVBAR ────────────────────────────────────────────────── */
@@ -77,17 +81,23 @@
 
     /* ─── MOBILE MENU ───────────────────────────────────────────── */
     .mobile-menu {
-      display: none; position: fixed; inset: 0;
-      background: rgba(13,27,42,.98); z-index: 999;
-      flex-direction: column; align-items: center;
-      justify-content: center; gap: 2.5rem;
+      position: fixed; inset: 0;
+      background: rgba(13,27,42,.98); z-index: 1100;
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; gap: 2rem;
+      padding: 6rem 1.5rem 2rem;
+      opacity: 0; visibility: hidden; pointer-events: none;
+      transition: opacity .3s ease, visibility .3s ease;
     }
-    .mobile-menu.open { display: flex; }
+    .mobile-menu.open {
+      opacity: 1; visibility: visible; pointer-events: auto;
+    }
     .mobile-menu a {
       font-family: 'Playfair Display', serif;
       font-size: 1.8rem; color: var(--white);
       cursor: pointer; text-decoration: none;
       transition: color .3s;
+      text-align: center;
     }
     .mobile-menu a:hover { color: var(--gold); }
     .mobile-close {
@@ -95,6 +105,9 @@
       font-size: 2rem; color: var(--gold);
       cursor: pointer; background: none; border: none;
       font-family: inherit;
+    }
+    .mobile-menu .btn-primary {
+      width: min(100%, 320px);
     }
 
     /* ─── BUTTONS ────────────────────────────────────────────────── */
@@ -272,11 +285,28 @@
     }
     .sobre-frame {
       position: absolute; inset: 0;
-      border: 1px solid var(--gold-line);
+      border: 3px solid var(--gold-line);
       background: linear-gradient(135deg,rgba(201,168,76,.05),rgba(201,168,76,.02));
       display: flex; align-items: center; justify-content: center;
       font-size: 8rem; color: rgba(201,168,76,.12);
+
     }
+     .sobre-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+
+     }
+
+     .hero-ornament img
+      {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;  
+      }
+
     .sobre-acc1 {
       position: absolute; bottom: -20px; right: -20px;
       width: 180px; height: 180px;
@@ -597,4 +627,5 @@
       .hero-stats { gap: 2rem; }
       .hero-btns { flex-direction: column; }
       .hero-btns button { width: 100%; }
+      .mobile-menu a { font-size: 1.45rem; }
     }
